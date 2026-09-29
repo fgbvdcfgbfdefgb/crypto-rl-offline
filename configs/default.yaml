@@ -1,0 +1,44 @@
+# All paths are relative to the repository root. Training never downloads data.
+data:
+  prices_dir: data/prices
+  catalog_path: data/price_catalog.csv
+  context_path: data/context/daily_market_context.parquet
+  news_path: data/news/crypto_news.parquet
+  model_dir: models/financial_sentiment
+  lookback: 60
+  require_complete_days: true
+
+environment:
+  initial_balance: 2000.0
+  fee_rate: 0.001       # 10 basis points
+  slippage_bps: 2.0
+  target_allocations: [0.0, 0.25, 0.5, 0.75, 1.0]
+  turnover_penalty: 0.002
+  drawdown_penalty: 0.05
+  reward_scale: 100.0
+
+ppo:
+  hidden_size: 128
+  learning_rate: 0.0003
+  gamma: 0.999
+  gae_lambda: 0.95
+  clip_ratio: 0.2
+  value_coef: 0.5
+  entropy_coef: 0.01
+  max_grad_norm: 0.5
+  update_epochs: 6
+  minibatch_size: 256
+
+train:
+  episodes: 1000
+  seed: 1337
+  split: train
+  train_fraction: 0.8
+  max_news_per_day: 64
+  output_dir: runs
+  checkpoint_every: 1
+  plot_every: 1
+  cpu_agents_if_no_gpu: 1
+  sentiment_batch_size: 32
+  sentiment_threads: 4
+  strict_offline_model: true

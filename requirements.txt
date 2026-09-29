@@ -1,0 +1,9 @@
+# Compatible with the supplied Snowflake package inventory.
+numpy>=2.0
+pandas>=2.2
+pyarrow>=16
+matplotlib>=3.8
+PyYAML>=6.0
+torch>=2.6
+transformers>=4.45
+safetensors>=0.4

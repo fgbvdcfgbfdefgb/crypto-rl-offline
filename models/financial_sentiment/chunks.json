@@ -1,0 +1,30 @@
+{
+  "target": "model.safetensors",
+  "size": 328499560,
+  "sha256": "c0b61385e4482edd179b69042c014dcb53a79431784f34a0171f5d43b092feaa",
+  "parts": [
+    {
+      "name": "model.safetensors.part-000",
+      "size": 94371840,
+      "sha256": "0518df7275d31044959edd804087a3029d7b9a8c5d922afcd7e636b316575500"
+    },
+    {
+      "name": "model.safetensors.part-001",
+      "size": 94371840,
+      "sha256": "a0ec1a2b7c746d1af4b653e9081a648067af3ae35217c20d93d162ea6e20400d"
+    },
+    {
+      "name": "model.safetensors.part-002",
+      "size": 94371840,
+      "sha256": "aa77dbb63e21675263e634eb0d1764cbfbf92239081bc46af57b9fe43778806e"
+    },
+    {
+      "name": "model.safetensors.part-003",
+      "size": 45384040,
+      "sha256": "a0432c34099e3d03998d5ba46438393ae8291a057e4cbdecf756d56da08f7398"
+    }
+  ],
+  "upstream": "mrm8488/distilroberta-finetuned-financial-news-sentiment-analysis",
+  "revision": "ae0eab9ad336d7d548e0efe394b07c04bcaf6e91",
+  "license": "Apache-2.0"
+}

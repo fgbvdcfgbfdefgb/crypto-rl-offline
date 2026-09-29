@@ -1,0 +1,286 @@
+{
+  "created_utc": "2026-09-29 12:39:29.380590+00:00",
+  "coverage": {
+    "prices": {
+      "BTCUSDT": {
+        "start": "2017-08-17",
+        "end": "2026-09-28",
+        "rows": 4786399,
+        "source": "Binance spot 1m public data"
+      },
+      "ETHUSDT": {
+        "start": "2017-08-17",
+        "end": "2026-09-28",
+        "rows": 4786398,
+        "source": "Binance spot 1m public data"
+      },
+      "LTCUSDT": {
+        "start": "2017-12-13",
+        "end": "2026-09-28",
+        "rows": 4616925,
+        "source": "Binance spot 1m public data"
+      }
+    },
+    "context": {
+      "start": "2017-08-17",
+      "end": "2026-09-29",
+      "rows": 9875,
+      "sources": [
+        "Alternative.me Fear & Greed",
+        "FRED",
+        "Coin Metrics Community",
+        "lagged Binance aggregates"
+      ]
+    },
+    "news": {
+      "start": "2017-09-23T10:00:42Z",
+      "end": "2025-12-03T10:28:51Z",
+      "rows": 55610,
+      "rows_by_asset": {
+        "BTC": 31162,
+        "ETH": 21721,
+        "LTC": 2727
+      },
+      "source": "soheilrahsaz/cryptoNewsDataset (CC0-1.0)"
+    },
+    "model": {
+      "upstream": "mrm8488/distilroberta-finetuned-financial-news-sentiment-analysis",
+      "revision": "ae0eab9ad336d7d548e0efe394b07c04bcaf6e91",
+      "weight_bytes": 328499560,
+      "parts": 4,
+      "license": "Apache-2.0"
+    }
+  },
+  "files": [
+    {
+      "path": "data/price_catalog.csv",
+      "size": 710785,
+      "sha256": "87112e85cac4411f9baa4c0a7ecbc6ffaccca1cd530f98e68f66a1602ea7ee52"
+    },
+    {
+      "path": "data/context/daily_market_context.parquet",
+      "size": 696673,
+      "sha256": "212e4349b62d06be54d094fb15edbade6e857b19f5fdd137e942ba391a9f8652"
+    },
+    {
+      "path": "data/news/crypto_news.parquet",
+      "size": 6552872,
+      "sha256": "e17cf50d596ec160941ba465522fd149dcc764155a3c15e13c3c3ed7b1b2c6f9"
+    },
+    {
+      "path": "data/prices/BTCUSDT_2017.parquet",
+      "size": 10123174,
+      "sha256": "d07e0a15c5b3225a569d49360ac2d961d2a3b0e5912a0d2d1cf69f7f16555d1a"
+    },
+    {
+      "path": "data/prices/BTCUSDT_2018.parquet",
+      "size": 32459848,
+      "sha256": "5a9e7691b5b96ca29c6251d36d3abec050c5f3722b2ff94ee829e8d871e5baaf"
+    },
+    {
+      "path": "data/prices/BTCUSDT_2019.parquet",
+      "size": 33201305,
+      "sha256": "8958f8a3d050831f14e6fd16e9edf1d36ec1f7736ad5da0828f27952edc41912"
+    },
+    {
+      "path": "data/prices/BTCUSDT_2020.parquet",
+      "size": 34097698,
+      "sha256": "61f3e67f32f99336a1299dc15401076cc6ec21353c4ad74c1c4e065cae90aa8b"
+    },
+    {
+      "path": "data/prices/BTCUSDT_2021.parquet",
+      "size": 34563928,
+      "sha256": "46017efccb35ce6645fe4e0fd318e8a165fa88a535fb8a078d85654e9f449a4f"
+    },
+    {
+      "path": "data/prices/BTCUSDT_2022.parquet",
+      "size": 34221067,
+      "sha256": "3f3f2a252b43048ae40910d8ca407e68f0a93365c76147b0483a5335668358a4"
+    },
+    {
+      "path": "data/prices/BTCUSDT_2023.parquet",
+      "size": 33359571,
+      "sha256": "2161c91ee7ad8bd181404facf99ed1e64b7a482ec9a3139fffea8687a34cd85a"
+    },
+    {
+      "path": "data/prices/BTCUSDT_2024.parquet",
+      "size": 33671748,
+      "sha256": "65a31938c8c5f623e03690f027fa01db2a68a33399f4e70a44c043e3d94a8dee"
+    },
+    {
+      "path": "data/prices/BTCUSDT_2025.parquet",
+      "size": 34051217,
+      "sha256": "1c774c245e765ef68aaa500a2bacaf0e115af3733f69c9f5be660cb827e76c53"
+    },
+    {
+      "path": "data/prices/BTCUSDT_2026.parquet",
+      "size": 25131357,
+      "sha256": "b1623b5f1226d8889560857dad8ea3c44f68ca34eff711143e8c18aeeac527fe"
+    },
+    {
+      "path": "data/prices/ETHUSDT_2017.parquet",
+      "size": 8879062,
+      "sha256": "701de38efe8c33deb3b66b3174e2b82860f5b8407106a6b81fb685abcf9b4820"
+    },
+    {
+      "path": "data/prices/ETHUSDT_2018.parquet",
+      "size": 29308449,
+      "sha256": "5f85fcaeaf976ba408c0515aaca956d731b5f0ef83b6652f8c1ac1692dc0852f"
+    },
+    {
+      "path": "data/prices/ETHUSDT_2019.parquet",
+      "size": 28279624,
+      "sha256": "525c622c2851d931bfc4ef4e53e9955d710b68b22ca79e7a84c0e8e23dda6bd7"
+    },
+    {
+      "path": "data/prices/ETHUSDT_2020.parquet",
+      "size": 29449705,
+      "sha256": "132731411fc441306b853a91771d44ac1c8bc4ef29e079677931a1aba12af955"
+    },
+    {
+      "path": "data/prices/ETHUSDT_2021.parquet",
+      "size": 32339279,
+      "sha256": "1988b476663481567bc7f90172e498914cb55bb66f24b14e45f38b869f9cb3dd"
+    },
+    {
+      "path": "data/prices/ETHUSDT_2022.parquet",
+      "size": 30311267,
+      "sha256": "4e4bf78e2016c46707c67b96def264c90e0ca139177652a320f84451a3e3d0f5"
+    },
+    {
+      "path": "data/prices/ETHUSDT_2023.parquet",
+      "size": 28970978,
+      "sha256": "267c287d48379f120f24cce44397be0de8f6ab2dcf2be7b9fa572baaf83dcdf4"
+    },
+    {
+      "path": "data/prices/ETHUSDT_2024.parquet",
+      "size": 31013825,
+      "sha256": "f96c57e503600917e88eebd847721738cc2d4f4d878b36111c0184926a70de1b"
+    },
+    {
+      "path": "data/prices/ETHUSDT_2025.parquet",
+      "size": 31422232,
+      "sha256": "b47c9c692c457a628916f438ccd00240c73bed102589c68811f6078d050e3f2d"
+    },
+    {
+      "path": "data/prices/ETHUSDT_2026.parquet",
+      "size": 22774673,
+      "sha256": "2cae9d326d43b41e094770c42c07c9e83cab49de5616ed2d6f247df465407d6f"
+    },
+    {
+      "path": "data/prices/LTCUSDT_2017.parquet",
+      "size": 1345651,
+      "sha256": "bbed2c4fa0a4cef3dda16e2c28cd455fec1b77cb584a4a4ccd5e2151fb7538c9"
+    },
+    {
+      "path": "data/prices/LTCUSDT_2018.parquet",
+      "size": 26951921,
+      "sha256": "10aaec161f5453e375142040a91864a1fe5a06e103d6ae75da1073446f9524d7"
+    },
+    {
+      "path": "data/prices/LTCUSDT_2019.parquet",
+      "size": 26565804,
+      "sha256": "383177fce36774a9296a687737c8dbda2af6ced13496d659115e66338dfef01b"
+    },
+    {
+      "path": "data/prices/LTCUSDT_2020.parquet",
+      "size": 27112800,
+      "sha256": "7a751c95907243a4770961222dfea1d73acce740dbb7bff28cfb93a56976bb0d"
+    },
+    {
+      "path": "data/prices/LTCUSDT_2021.parquet",
+      "size": 27161046,
+      "sha256": "f81ee2caf19e34f8740327618ebda01bee2dbae4fc353c878e7a9774e18f8124"
+    },
+    {
+      "path": "data/prices/LTCUSDT_2022.parquet",
+      "size": 22601649,
+      "sha256": "b1c62b4fac73ae09a13854eb8513722832832b8302059d9b1095693ec34bb907"
+    },
+    {
+      "path": "data/prices/LTCUSDT_2023.parquet",
+      "size": 23873591,
+      "sha256": "2a2f5eccab416afd7046bdd1ea71b1d44b3ecbe5999a61ee2eeec1e0ab3bc73e"
+    },
+    {
+      "path": "data/prices/LTCUSDT_2024.parquet",
+      "size": 24197208,
+      "sha256": "86c0169078c1e10ca48ebb1dc28274caf2ae93ce11e4f3624365688c0671b413"
+    },
+    {
+      "path": "data/prices/LTCUSDT_2025.parquet",
+      "size": 24878029,
+      "sha256": "24e7779801aad9038ccd40a373bf605657a26a46c2ea5d189be2abed6eb016da"
+    },
+    {
+      "path": "data/prices/LTCUSDT_2026.parquet",
+      "size": 17340117,
+      "sha256": "6e339e6f16b215fdab2e5836c811c95b2e491f2ff8df590af7a7a65299861fe7"
+    },
+    {
+      "path": "models/financial_sentiment/LICENSE",
+      "size": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "models/financial_sentiment/UPSTREAM_README.md",
+      "size": 3103,
+      "sha256": "d56790687bb34b32b3167bbc19ec379d8bc9b957123ce6432e43575c12f1ce26"
+    },
+    {
+      "path": "models/financial_sentiment/chunks.json",
+      "size": 977,
+      "sha256": "e49a158f032a3a8d625e4f10cdd2b201d186d157fd30e9adce25afe0167eaab7"
+    },
+    {
+      "path": "models/financial_sentiment/config.json",
+      "size": 933,
+      "sha256": "c4128a9b546f4ea50590ca60db1e2bbadfd3726b8e1e70441be1b741a1083a72"
+    },
+    {
+      "path": "models/financial_sentiment/merges.txt",
+      "size": 456356,
+      "sha256": "fe36cab26d4f4421ed725e10a2e9ddb7f799449c603a96e7f29b5a3c82a95862"
+    },
+    {
+      "path": "models/financial_sentiment/model.safetensors.part-000",
+      "size": 94371840,
+      "sha256": "0518df7275d31044959edd804087a3029d7b9a8c5d922afcd7e636b316575500"
+    },
+    {
+      "path": "models/financial_sentiment/model.safetensors.part-001",
+      "size": 94371840,
+      "sha256": "a0ec1a2b7c746d1af4b653e9081a648067af3ae35217c20d93d162ea6e20400d"
+    },
+    {
+      "path": "models/financial_sentiment/model.safetensors.part-002",
+      "size": 94371840,
+      "sha256": "aa77dbb63e21675263e634eb0d1764cbfbf92239081bc46af57b9fe43778806e"
+    },
+    {
+      "path": "models/financial_sentiment/model.safetensors.part-003",
+      "size": 45384040,
+      "sha256": "a0432c34099e3d03998d5ba46438393ae8291a057e4cbdecf756d56da08f7398"
+    },
+    {
+      "path": "models/financial_sentiment/special_tokens_map.json",
+      "size": 239,
+      "sha256": "378eb3bf733eb16e65792d7e3fda5b8a4631387ca04d2015199c4d4f22ae554d"
+    },
+    {
+      "path": "models/financial_sentiment/tokenizer.json",
+      "size": 1355932,
+      "sha256": "6f95e8747d56797c00cb088bedbfac0a7b7d84d1d4a7503f0507c568c4ba583b"
+    },
+    {
+      "path": "models/financial_sentiment/tokenizer_config.json",
+      "size": 333,
+      "sha256": "5066b57002ab15418f3472aa53a8b083878f84050e8153ba62b9d40e10651a4c"
+    },
+    {
+      "path": "models/financial_sentiment/vocab.json",
+      "size": 798293,
+      "sha256": "ed19656ea1707df69134c4af35c8ceda2cc9860bf2c3495026153a133670ab5e"
+    }
+  ]
+}
